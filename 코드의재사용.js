@@ -8,7 +8,20 @@ const sum = function () {
   for (let i = 1; i <= limit; i++) {
     output += i;
   }
+  console.log(output);
 };
 
 let limit = 10;
 sum(); //1 to 10 sum!!
+//============================================================
+//위의 식에 매개변수와 리턴값을 더하면 호출시 더 간편해진다.
+// const sum = function (limit) {
+//   //sum함수 호출시 여기로 점프
+//   let output = 0;
+//   for (let i = 1; i <= limit; i++) {
+//     output += i;
+//   }
+//  return output;
+// };
+// console.log(`합은: ${sum(10)}`)
+//매개변수에 바로 대입이 가능하고 리턴값으로 바로 값만 받아서 원하는 형태로 출력을 할수있다.
